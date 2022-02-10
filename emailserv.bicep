@@ -17,7 +17,7 @@ param osDiskType string
 param osDiskDeleteOption string
 param virtualMachineSize string
 param nicDeleteOption string
-param adminUsername string
+param adminUsername string = 'Grpsdrk@123456'
 param networkSecurityGroupName string = guid(adminUsername)
 
 @secure()
