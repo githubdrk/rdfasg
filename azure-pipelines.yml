@@ -15,7 +15,7 @@ variables:
   ipAddress: '0.0.0.0'
  
 
-pool: drk
+pool: 
   vmImage: DESKTOP-REVLNG6
 
 steps:
