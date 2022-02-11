@@ -6,6 +6,13 @@
 trigger:
 - main
 
+variables:
+  vmImageName: 'ubuntu-latest'
+
+  azureServiceConnection: 'armbicep'
+  location: eastus
+  rggroup: emailbest
+
 pool:
   vmImage: ubuntu-latest
 
