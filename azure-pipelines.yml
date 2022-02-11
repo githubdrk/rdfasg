@@ -15,7 +15,7 @@ steps:
     azureSubscription: 'armbicep'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az deployment group create --resource-group emailbest  --template-file ./emailserv.bicep --parameters  ./emailpara.json'
+    inlineScript: 'az deployment group create --resource-group emailbest  --template-file ./emailserv.bicep --parameters ./emailpara.json'
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
