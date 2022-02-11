@@ -17,11 +17,11 @@ param osDiskType string
 param osDiskDeleteOption string
 param virtualMachineSize string
 param nicDeleteOption string
-param adminUsername string
+param adminUsername string 
 param networkSecurityGroupName string = guid(adminUsername)
 
 @secure()
-param adminPassword string
+param adminPassword string 
 
 var nsgId = resourceId(resourceGroup().name, 'Microsoft.Network/networkSecurityGroups', networkSecurityGroupName)
 //var vnetName = virtualNetworkName
