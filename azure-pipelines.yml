@@ -15,8 +15,8 @@ variables:
   ipAddress: '0.0.0.0'
  
 
-pool:
-  vmImage: drk
+pool: drk
+  vmImage: DESKTOP-REVLNG6
 
 steps:
 - task: AzureCLI@2
