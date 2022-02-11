@@ -34,4 +34,4 @@ steps:
     azureSubscription: 'armbicep'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az network dns zone create -g rggroup -n contoso.xyz'
+    inlineScript: 'az network dns zone create -g rggroup -n saponly.com'
