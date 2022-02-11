@@ -12,6 +12,8 @@ variables:
   azureServiceConnection: 'armbicep'
   location: eastus
   rggroup: 'emailbest'
+   ipAddress: '0.0.0.0'
+ 
 
 pool:
   vmImage: ubuntu-latest
