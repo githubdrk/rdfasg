@@ -11,7 +11,7 @@ variables:
 
   azureServiceConnection: 'armbicep'
   location: eastus
-  rggroup: emailbest
+  rggroup: 'emailbest'
 
 pool:
   vmImage: ubuntu-latest
@@ -22,19 +22,19 @@ steps:
     azureSubscription: 'armbicep'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az group create --name rggroup --location "East US"'
+    inlineScript: 'az group create --name $(rggroup) --location "East US"'
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'armbicep'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az deployment group create --resource-group rggroup  --template-file ./emailserv.bicep --parameters ./emailpara.json'
+    inlineScript: 'az deployment group create --resource-group $(rggroup)  --template-file ./emailserv.bicep --parameters ./emailpara.json'
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'armbicep'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
-    inlineScript: 'az network dns zone create -g rggroup -n saponly.com'
+    inlineScript: 'az network dns zone create -g $(rggroup) -n saponly.com'
 
 - task: AzureCLI@2
   inputs:
