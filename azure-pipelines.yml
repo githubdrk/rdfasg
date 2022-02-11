@@ -48,10 +48,7 @@ steps:
     inlineScript: 'az network public-ip show -g $(rggroup) -n ubuemail-ip > ./ipoutput.txt'
 - task: CmdLine@2
   inputs:
-    script: |
-      echo Write your commands here
-      
-      echo Hello world
+    script: 'cat ipoutput'
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'armbicep'
