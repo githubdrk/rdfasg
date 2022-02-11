@@ -101,6 +101,9 @@
         "adminUsername": {
             "value": "ubuemail"
         }
+        "adminPassword": {
+            "value": "Grpsdrk@123456"
+        }
         
     }
 }
