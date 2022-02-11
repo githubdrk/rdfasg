@@ -31,6 +31,7 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az deployment group create --resource-group $(rggroup)  --template-file ./emailserv.bicep --parameters ./emailpara.json'
+    
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'armbicep'
