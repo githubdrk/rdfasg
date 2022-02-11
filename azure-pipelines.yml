@@ -16,7 +16,7 @@ variables:
  
 
 pool: 
-  vmImage: DESKTOP-REVLNG6
+  name: drk
 
 steps:
 - task: AzureCLI@2
