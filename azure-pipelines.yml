@@ -46,6 +46,7 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az network public-ip show -g $(rggroup) -n ubuemail-ip > ./ipoutput.txt'
+    
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'armbicep'
