@@ -42,3 +42,9 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: 'az network dns record-set a add-record -g $(rggroup) -z saponly.com -n mail -a  $(ubuemail-ip)'
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'armbicep'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: 'az network public-ip show -g $(rggroup) -n ubuemail-ip'
