@@ -70,7 +70,7 @@
             ]
         },
         "publicIpAddressName": {
-            "value": "ubuemail-ip"
+            "value": "ubuemail1-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
